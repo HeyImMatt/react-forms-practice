@@ -22,6 +22,13 @@ function UserSignupForm({ formData, changeHandler, submitHandler }) {
       onChange={changeHandler}
       />
 
+      <label htmlFor="subscribe">Subscribe to newsletter?</label>
+      <input
+      type="checkbox"
+      id="subscribe"
+      name="subscribe"
+      onChange={changeHandler}
+      />
       <br/>
       <button type="submit">Submit</button>
     </form>

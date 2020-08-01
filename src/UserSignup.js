@@ -6,14 +6,15 @@ function UserSignup() {
   const INITIAL_FORM_DATA = {
     username: '',
     date: '',
-    subscribe: false,
+    subscribe: '',
     ageCategory: '',
   };
   const [formData, setFormData] = useState(INITIAL_FORM_DATA);
   const [usersList, setUsersList] = useState([]);
 
   const changeHandler = (e) => {
-    const { name, value } = e.target;
+    let { name, value } = e.target;
+    if (name === 'subscribe') value = e.target.checked;
     setFormData((fData) => ({
       ...fData,
       [name]: value,
