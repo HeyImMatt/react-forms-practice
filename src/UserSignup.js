@@ -23,6 +23,7 @@ function UserSignup() {
   const submitHandler = (e) => {
     e.preventDefault();
     setUsersList((uList) => [...uList, formData])
+    setFormData(INITIAL_FORM_DATA);
   }
 
   return (
