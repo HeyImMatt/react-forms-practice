@@ -12,7 +12,7 @@ function UserSignupForm({ formData, changeHandler, submitHandler }) {
       value={username}
       onChange={changeHandler}
       />
-
+      <br />
       <label htmlFor="date">Date:</label>
       <input
       type="date"
@@ -21,7 +21,7 @@ function UserSignupForm({ formData, changeHandler, submitHandler }) {
       value={date}
       onChange={changeHandler}
       />
-
+      <br />
       <label htmlFor="subscribe">Subscribe to newsletter?</label>
       <input
       type="checkbox"
@@ -31,6 +31,13 @@ function UserSignupForm({ formData, changeHandler, submitHandler }) {
       onChange={changeHandler}
       />
       <br/>
+      <label htmlFor="ageCategory">Select Age Group:</label>
+      <select id="ageCategory" name="ageCategory" value={ageCategory} onChange={changeHandler}>
+        <option value="" disabled hidden selected>Age...</option>
+        <option value="18-29">18-29</option>
+        <option value="30-39">30-39</option>
+        <option value="40-49">40-49</option>
+      </select>
       <button type="submit">Submit</button>
     </form>
   )
