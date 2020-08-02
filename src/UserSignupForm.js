@@ -27,6 +27,7 @@ function UserSignupForm({ formData, changeHandler, submitHandler }) {
       type="checkbox"
       id="subscribe"
       name="subscribe"
+      checked={subscribe}
       onChange={changeHandler}
       />
       <br/>
