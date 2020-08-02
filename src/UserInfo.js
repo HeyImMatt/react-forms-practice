@@ -1,9 +1,9 @@
 import React from 'react';
 
 function UserInfo({ user }) {
-  const { username, date, subscribe, ageCategory } = user;
+  const { username, date, subscribe, ageCategory, idx } = user;
   return (
-    <div>
+    <div key={idx}>
       <p>Username: {username}</p>
       <p>Date: {date}</p>
       <p>Subscribed? {subscribe ? 'Yes' : 'No'}</p>

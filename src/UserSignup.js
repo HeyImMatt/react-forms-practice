@@ -36,7 +36,7 @@ function UserSignup() {
     submitHandler={submitHandler} />
 
     <h4>Current Users:</h4>
-    {usersList.map((user) => <UserInfo user={user} />)}
+    {usersList.map((user, idx) => <UserInfo user={user} id={idx} />)}
   </>
   );
 }

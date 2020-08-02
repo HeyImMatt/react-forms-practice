@@ -33,11 +33,12 @@ function UserSignupForm({ formData, changeHandler, submitHandler }) {
       <br/>
       <label htmlFor="ageCategory">Select Age Group:</label>
       <select id="ageCategory" name="ageCategory" value={ageCategory} onChange={changeHandler}>
-        <option value="" disabled hidden selected>Age...</option>
+        <option value="" disabled hidden>Age...</option>
         <option value="18-29">18-29</option>
         <option value="30-39">30-39</option>
         <option value="40-49">40-49</option>
       </select>
+      <br />
       <button type="submit">Submit</button>
     </form>
   )
