@@ -8,6 +8,7 @@ function UserSignup() {
     date: '',
     subscribe: '',
     ageCategory: '',
+    householdIncome: ''
   };
   const [formData, setFormData] = useState(INITIAL_FORM_DATA);
   const [usersList, setUsersList] = useState([]);
